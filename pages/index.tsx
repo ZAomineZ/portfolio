@@ -2,6 +2,10 @@ import Head from "next/head"
 import { AboutHome } from "../components/AboutHome"
 import { Header } from "../components/Header"
 import { SectionHomeBanner } from "../components/SectionHomeBanner"
+import { SectionFeatures } from "../components/SectionFeatures"
+import { SectionPortfolio } from "../components/SectionPortfolio"
+import { SectionContact } from "../components/SectionContact"
+import { Footer } from "../components/Footer"
 
 export default function Home() {
   return (
@@ -24,8 +28,16 @@ export default function Home() {
       <Header />
       {/* Section home banner */}
       <SectionHomeBanner />
-      {/* Section about section */}
+      {/* Section about */}
       <AboutHome />
+      {/* Section services */}
+      <SectionFeatures />
+      {/* Section portfolio */}
+      <SectionPortfolio />
+      {/* Section contact */}
+      <SectionContact />
+      {/* Section footer */}
+      <Footer />
     </>
   )
 }

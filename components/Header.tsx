@@ -16,6 +16,7 @@ export function Header() {
                 alt="Logo brand"
                 width={140}
                 height={35}
+                quality={100}
               />
             </a>
             <button className={styles.navbar_toggler}></button>

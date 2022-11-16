@@ -2,6 +2,9 @@
   --color-light: #fff;
   --color-black: #000;
   --color-purple: #4458dc;
+  --color-background: #f9f9fd;
+  --color-gray: #999;
+  --color-icon: #788489;
 }
 
 * , :after, :before {
@@ -89,6 +92,11 @@ button, select {
   justify-content: flex-start !important;
 }
 
+.justify_content_center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -123,9 +131,24 @@ button, select {
   text-align: left !important;
 }
 
+.text_center {
+  text-align: center !important;
+}
+
+.flex_column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -133,11 +156,50 @@ button, select {
   .container {
     max-width: 720px;
   }
+
+  .col-md-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.66667%;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  .col-md-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  .col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
   }
 
   .col-lg-7 {
@@ -150,6 +212,19 @@ button, select {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%
+  }
+
+  .col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 
   .offset_lg_1 {
