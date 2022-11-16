@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 
 export function Header() {
   const [isFixed, setIsFixed] = useState<boolean>(false)
+  const [collapseShow, setCollapseShow] = useState<boolean>(false)
 
   useEffect(() => {
     window.addEventListener("scroll", isFixedCallback)
@@ -40,9 +41,21 @@ export function Header() {
                 quality={100}
               />
             </a>
-            <button className={styles.navbar_toggler}></button>
+            <button
+              className={styles.navbar_toggler}
+              aria-expanded={collapseShow}
+              onClick={() => setCollapseShow(!collapseShow)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             {/* Nav links header */}
-            <div className={`${styles.navbar_collapse}`}>
+            <div
+              className={`${styles.navbar_collapse} ${
+                collapseShow ? styles.show : ""
+              }`}
+            >
               <ul
                 className={`${styles.nav} ${styles.navbar_nav} ${styles.menu_nav} justify_content_end`}
               >
