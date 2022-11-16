@@ -1,8 +1,8 @@
-import styles from "../styles/Footer.module.scss"
+import styles from "../../styles/Footer.module.scss"
 import Image from "next/image"
-import { TwitterIcon } from "./icons/Twitter"
-import { GitlabIcon } from "./icons/Gitlab"
-import { LinkedinIcon } from "./icons/Linkedin"
+import { TwitterIcon } from "../icons/Twitter"
+import { GitlabIcon } from "../icons/Gitlab"
+import { LinkedinIcon } from "../icons/Linkedin"
 
 export function Footer() {
   return (
@@ -12,7 +12,7 @@ export function Footer() {
           <div className="col-lg-12">
             <div className="flex_column">
               <div className={styles.footer_logo}>
-                <a href="#">
+                <a href="components/layout/Footer#">
                   <Image
                     src="/img/logo.png"
                     alt="Logo brand"
@@ -24,13 +24,13 @@ export function Footer() {
                 <h4>Suivez-moi</h4>
               </div>
               <div className={styles.footer_social}>
-                <a href="#">
+                <a href="components/layout/Footer#">
                   <TwitterIcon />
                 </a>
-                <a href="#">
+                <a href="components/layout/Footer#">
                   <GitlabIcon />
                 </a>
-                <a href="#">
+                <a href="components/layout/Footer#">
                   <LinkedinIcon />
                 </a>
               </div>

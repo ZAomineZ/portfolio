@@ -140,6 +140,14 @@ button, select {
   flex-direction: column !important;
 }
 
+.ml_auto, .mx_auto {
+  margin-left: auto !important;
+}
+
+.mr_auto, .mx_auto {
+  margin-right: auto !important;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -177,6 +185,13 @@ button, select {
     max-width: 41.66667%;
   }
 
+  .col-md-11 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 91.66667%;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
   .col-md-12 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -194,6 +209,13 @@ button, select {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .col-lg-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
   }
 
   .col-lg-8 {

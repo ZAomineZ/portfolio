@@ -1,11 +1,11 @@
 import Head from "next/head"
 import { AboutHome } from "../components/AboutHome"
-import { Header } from "../components/Header"
+import { Header } from "../components/layout/Header"
 import { SectionHomeBanner } from "../components/SectionHomeBanner"
 import { SectionFeatures } from "../components/SectionFeatures"
 import { SectionPortfolio } from "../components/SectionPortfolio"
 import { SectionContact } from "../components/SectionContact"
-import { Footer } from "../components/Footer"
+import { Footer } from "../components/layout/Footer"
 
 export default function Home() {
   return (

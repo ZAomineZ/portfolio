@@ -3,12 +3,14 @@ lockfileVersion: 5.4
 specifiers:
   '@types/node': 18.11.9
   '@types/react': 18.0.25
+  '@types/react-animations': ^1.0.0
   '@types/react-dom': 18.0.8
   eslint: 8.22.0
   eslint-config-next: 13.0.2
   next: 13.0.2
   prettier: 2.7.1
   react: 18.2.0
+  react-animations: ^1.0.0
   react-dom: 18.2.0
   sass: ^1.56.1
   typescript: 4.8.4
@@ -16,11 +18,13 @@ specifiers:
 dependencies:
   '@types/node': 18.11.9
   '@types/react': 18.0.25
+  '@types/react-animations': 1.0.0
   '@types/react-dom': 18.0.8
   eslint: 8.22.0
   eslint-config-next: 13.0.2_yv3nvntfnealqm77uomj2fi4ki
   next: 13.0.2_m5sxuueb27gk6ddc5gums6vtgq
   react: 18.2.0
+  react-animations: 1.0.0
   react-dom: 18.2.0_react@18.2.0
   sass: 1.56.1
   typescript: 4.8.4
@@ -249,6 +253,10 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: false
+
+  /@types/react-animations/1.0.0:
+    resolution: {integrity: sha512-ItPuRqOf7UML26hc0kaALEtlzeXtbflqI2VtPxsJh/DcqDZFbPIVNi2apSs+1WuhRfmU6YqhZPXmpxns7zPZKg==}
     dev: false
 
   /@types/react-dom/18.0.8:
@@ -1627,6 +1635,10 @@ packages:
 
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+    dev: false
+
+  /react-animations/1.0.0:
+    resolution: {integrity: sha512-ePPpVgdKnNEXm+LP1ww5s3n0JzebBw9QdRfxRqogzeg1PDIn6kf0pmvgeTeVZQXXpGmHImkIeTiaQR1O6xjntA==}
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:

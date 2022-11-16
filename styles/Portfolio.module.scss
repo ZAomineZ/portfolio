@@ -38,6 +38,7 @@
   .nav ul li a:hover {
     transition: all .15s;
     color: var(--color-purple);
+    cursor: pointer;
   }
 
   .nav ul li.active a {
@@ -65,6 +66,12 @@
     margin-bottom: 40px;
     transition: box-shadow .3s;
     margin-right: 0;
+    animation: 1s fadeInLeft;
+  }
+
+  .project_card:hover {
+    box-shadow: 0 1px 31px rgb(0 0 0 / 9%);
+    cursor: pointer;
   }
 
   .project_card .project_card_image {
@@ -119,5 +126,17 @@
     padding: 5px 10px;
     margin-right: 10px;
     border-radius: 3px;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
