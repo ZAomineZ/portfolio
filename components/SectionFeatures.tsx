@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function SectionFeatures() {
   return (
-    <section className={styles.features_area}>
+    <section className={styles.features_area} id="services">
       <div className="container">
         <div className="row justify_content_center">
           <div className="text_center col-lg-8">

@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function SectionHomeBanner() {
   return (
-    <section className={styles.home_banner_area}>
+    <section className={styles.home_banner_area} id="home_banner">
       <div className={styles.banner_inner}>
         <div className="container">
           <div className="row">

@@ -6,7 +6,7 @@ import { LinkedinIcon } from "../icons/Linkedin"
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="footer">
       <div className="container">
         <div className="row justify_content_center">
           <div className="col-lg-12">

@@ -35,7 +35,7 @@ export function SectionPortfolio() {
 
   return (
     <>
-      <section className={`${styles.portfolio}`}>
+      <section className={`${styles.portfolio}`} id="portfolio">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">

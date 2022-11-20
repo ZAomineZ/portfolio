@@ -199,6 +199,20 @@
   }
 }
 
+@media (max-width: 990px) {
+  .portfolio_modal .modal_body {
+    padding: 15px 15px 50px;
+  }
+
+  .portfolio_modal .tags li {
+    margin-bottom: 10px;
+  }
+
+  .portfolio_modal .modal_header {
+    height: 50px;
+  }
+}
+
 @media (min-width: 992px) {
   .modal .modal_lg {
     max-width: 800px;

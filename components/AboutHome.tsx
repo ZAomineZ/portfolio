@@ -3,7 +3,10 @@ import Image from "next/image"
 
 export function AboutHome() {
   return (
-    <section className={`${styles.about_area} ${styles.section_gap}`}>
+    <section
+      className={`${styles.about_area} ${styles.section_gap}`}
+      id="about"
+    >
       <div className="container">
         <div className="row align_items_center justify_content_start">
           <div className="col-lg-5">

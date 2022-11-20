@@ -51,14 +51,12 @@ export function Modal({ project }: Props) {
               className={`${styles.modal_body} col-md-11 col-lg-9 ml_auto mr_auto`}
             >
               <p className={styles.modal_title}>{project?.title}</p>
-              <Image
+              <img
                 src="/img/project_1.png"
-                alt="Project image"
-                width={600}
-                height={450}
-                quality={100}
                 className={styles.modal_image}
+                alt=""
               />
+
               <p className={styles.modal_description}>{project?.description}</p>
               <div className={styles.modal_stack}>
                 <p className={styles.modal_stack_title}>Using stack:</p>

@@ -32,7 +32,7 @@ export function Header() {
         >
           <div className={`container ${styles.navbar_container}`}>
             {/* Logo brand */}
-            <a href="components/layout/Header#" className={styles.navbar_brand}>
+            <a href="components/layout/Header" className={styles.navbar_brand}>
               <Image
                 src="/img/logo.png"
                 alt="Logo brand"
@@ -60,50 +60,27 @@ export function Header() {
                 className={`${styles.nav} ${styles.navbar_nav} ${styles.menu_nav} justify_content_end`}
               >
                 <li className={`${styles.nav_item} ${styles.active}`}>
-                  <a
-                    href="components/layout/Header#"
-                    className={styles.nav_link}
-                  >
+                  <a href="#home_banner" className={styles.nav_link}>
                     Home
                   </a>
                 </li>
                 <li className={styles.nav_item}>
-                  <a
-                    href="components/layout/Header#"
-                    className={styles.nav_link}
-                  >
+                  <a href="#about" className={styles.nav_link}>
                     About
                   </a>
                 </li>
                 <li className={styles.nav_item}>
-                  <a
-                    href="components/layout/Header#"
-                    className={styles.nav_link}
-                  >
+                  <a href="#services" className={styles.nav_link}>
                     Services
                   </a>
                 </li>
                 <li className={styles.nav_item}>
-                  <a
-                    href="components/layout/Header#"
-                    className={styles.nav_link}
-                  >
+                  <a href="#portfolio" className={styles.nav_link}>
                     Portfolio
                   </a>
                 </li>
                 <li className={styles.nav_item}>
-                  <a
-                    href="components/layout/Header#"
-                    className={styles.nav_link}
-                  >
-                    Pages
-                  </a>
-                </li>
-                <li className={styles.nav_item}>
-                  <a
-                    href="components/layout/Header#"
-                    className={styles.nav_link}
-                  >
+                  <a href="#contact" className={styles.nav_link}>
                     Contact
                   </a>
                 </li>

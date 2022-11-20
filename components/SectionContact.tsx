@@ -1,10 +1,37 @@
 import styles from "../styles/Contact.module.scss"
+import { MouseEvent, useState } from "react"
 
 export function SectionContact() {
+  const [name, setName] = useState<string>("")
+  const [email, setEmail] = useState<string>("")
+  const [message, setMessage] = useState<string>("")
+
+  const handleSubmit = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+
+    let data = { name, email, message }
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((r) => {
+      if (r.status === 200) {
+        setName("")
+        setEmail("")
+        setMessage("")
+      }
+    })
+  }
+
   return (
     <section
       className={styles.contact}
       style={{ backgroundImage: "url('/img/contact.jpg')" }}
+      id="contact"
     >
       <div className={`container ${styles.contact_section}`}>
         <div className="row">
@@ -18,7 +45,9 @@ export function SectionContact() {
               <dl className={styles.contact_list}>
                 <dt>Email:</dt>
                 <dd>
-                  <a href="mailto:mail@mail.com">mail@mail.com</a>
+                  <a href="mailto:vincentcapek@gmail.com">
+                    vincentcapek@gmail.com
+                  </a>
                 </dd>
               </dl>
             </div>
@@ -34,6 +63,7 @@ export function SectionContact() {
                     type="text"
                     placeholder="Votre nom..."
                     required={true}
+                    onChange={(e) => setName(e.target.value)}
                   />
                   <span className={styles.form_validation}></span>
                   <span className={styles.form_invalid_icon}>
@@ -45,6 +75,7 @@ export function SectionContact() {
                     type="email"
                     placeholder="Votre mail..."
                     required={true}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <span className={styles.form_validation}></span>
                   <span className={styles.form_invalid_icon}>
@@ -55,13 +86,18 @@ export function SectionContact() {
                   <textarea
                     placeholder="Votre message..."
                     required={true}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                   <span className={styles.form_validation}></span>
                   <span className={styles.form_invalid_icon}>
                     <i className="mdi mdi-close"></i>
                   </span>
                 </div>
-                <button className={styles.button} type="submit">
+                <button
+                  className={styles.button}
+                  type="submit"
+                  onClick={(e) => handleSubmit(e)}
+                >
                   Envoyer
                 </button>
               </form>
