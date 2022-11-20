@@ -14,7 +14,7 @@ export function SectionHomeBanner() {
                 <h1 className="text_uppercase">Je suis Vincent Capek</h1>
                 <h5>Developpeur PHP Fullstack</h5>
                 <div className="d_flex align_items_center">
-                  <a href="#" className={stylesButton.primary_button}>
+                  <a href="#contact" className={stylesButton.primary_button}>
                     <span>Contactez-moi</span>
                   </a>
                 </div>

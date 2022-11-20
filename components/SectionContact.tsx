@@ -1,5 +1,6 @@
 import styles from "../styles/Contact.module.scss"
 import { MouseEvent, useState } from "react"
+import swal from "sweetalert"
 
 export function SectionContact() {
   const [name, setName] = useState<string>("")
@@ -20,6 +21,10 @@ export function SectionContact() {
       body: JSON.stringify(data),
     }).then((r) => {
       if (r.status === 200) {
+        swal("Bravo !", "Votre message as bien était envoyé !", "success").then(
+          (r) => r
+        )
+
         setName("")
         setEmail("")
         setMessage("")
@@ -64,6 +69,7 @@ export function SectionContact() {
                     placeholder="Votre nom..."
                     required={true}
                     onChange={(e) => setName(e.target.value)}
+                    value={name}
                   />
                   <span className={styles.form_validation}></span>
                   <span className={styles.form_invalid_icon}>
@@ -76,6 +82,7 @@ export function SectionContact() {
                     placeholder="Votre mail..."
                     required={true}
                     onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                   />
                   <span className={styles.form_validation}></span>
                   <span className={styles.form_invalid_icon}>
@@ -87,6 +94,7 @@ export function SectionContact() {
                     placeholder="Votre message..."
                     required={true}
                     onChange={(e) => setMessage(e.target.value)}
+                    value={message}
                   ></textarea>
                   <span className={styles.form_validation}></span>
                   <span className={styles.form_invalid_icon}>

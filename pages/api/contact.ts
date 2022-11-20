@@ -30,8 +30,8 @@ export default function (req: NextApiRequest, res: any) {
       console.log(err)
     } else {
       console.log(info)
-
-      res.status(200)
     }
   })
+
+  return res.status(200).json({ success: true })
 }
