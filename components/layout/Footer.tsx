@@ -24,13 +24,25 @@ export function Footer() {
                 <h4>Suivez-moi</h4>
               </div>
               <div className={styles.footer_social}>
-                <a href="components/layout/Footer#">
+                <a
+                  href="https://twitter.com/Capek50121370"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <TwitterIcon />
                 </a>
-                <a href="components/layout/Footer#">
+                <a
+                  href="https://gitlab.com/Bluup-Aomine"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <GitlabIcon />
                 </a>
-                <a href="components/layout/Footer#">
+                <a
+                  href="components/layout/Footer#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <LinkedinIcon />
                 </a>
               </div>

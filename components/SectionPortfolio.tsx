@@ -11,9 +11,15 @@ export function SectionPortfolio() {
   const [projects, setProjects] = useState<Project[]>([])
   const [projectCurrent, setProjectCurrent] = useState<Project | null>(null)
   const [optionProject, setOptionProject] = useState<string>("all")
+  const [animate, setAnimate] = useState<boolean>(false)
 
   useEffect(() => {
     setProjects(ProjectsData)
+
+    setAnimate(true)
+    setTimeout(() => {
+      setAnimate(false)
+    }, 1000)
 
     subscribe("closeModal", () => {
       setProjectCurrent(null)
@@ -23,15 +29,19 @@ export function SectionPortfolio() {
   const updateOptionProject = (option: string) => {
     setOptionProject(option)
 
+    setAnimate(true)
+
     if (option !== "all") {
       setProjects(ProjectsData.filter((project) => project.type === option))
     }
     if (option === "all") {
       setProjects(ProjectsData)
     }
-  }
 
-  console.log(fadeInUp)
+    setTimeout(() => {
+      setAnimate(false)
+    }, 1000)
+  }
 
   return (
     <>
@@ -76,7 +86,9 @@ export function SectionPortfolio() {
             {projects.map((project) => {
               return (
                 <div
-                  className={`row ${styles.project_card}`}
+                  className={`row ${styles.project_card} ${
+                    animate && styles.project_card_animation
+                  }`}
                   key={project.id}
                   onClick={() => setProjectCurrent(project)}
                 >
@@ -84,10 +96,10 @@ export function SectionPortfolio() {
                     className={`col-md-6 col-lg-5 ${styles.project_card_image}`}
                   >
                     <Image
-                      src="/img/project.png"
+                      src={`${project.image}`}
                       alt="Project image"
                       quality={100}
-                      width={939}
+                      width={940}
                       height={720}
                     />
                   </div>

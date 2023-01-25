@@ -52,7 +52,7 @@ export function Modal({ project }: Props) {
             >
               <p className={styles.modal_title}>{project?.title}</p>
               <img
-                src="/img/project_1.png"
+                src={project?.image}
                 className={styles.modal_image}
                 alt=""
               />

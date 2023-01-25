@@ -22,20 +22,14 @@ export function AboutHome() {
           </div>
           <div className="offset_lg_1 col-lg-5">
             <div className={`text_left ${styles.main_title}`}>
-              <h2>
-                let’s <br />
-                Introduce about <br />
-                myself
-              </h2>
+              <h2>Qui suis-je ?</h2>
               <p>
-                Whose given. Were gathered. There first subdue greater. Bearing
-                you Whales heaven midst their. Beast creepeth. Fish days.
+                Je m'appelle Vincent, j'ai 22 ans, je suis développeur Web
+                FullStack PHP.
               </p>
               <p>
-                Is give may shall likeness made yielding spirit a itself
-                together created after sea is in beast beginning signs open god
-                you're gathering whose gathered cattle let. Creature whales
-                fruit unto meat the life beginning all in under give two.
+                Je code principalement en laravel coté backend et avec Vue 3
+                coté front-end.
               </p>
             </div>
           </div>

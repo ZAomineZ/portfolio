@@ -41,7 +41,7 @@ export function SectionContact() {
       <div className={`container ${styles.contact_section}`}>
         <div className="row">
           <div className="col-md-12">
-            <p className={styles.contact_title}>Get in touch_</p>
+            <p className={styles.contact_title}>Me Contacter_</p>
           </div>
         </div>
         <div className={`row ${styles.contacts}`}>
@@ -60,7 +60,7 @@ export function SectionContact() {
           <div className="col-md-7 col-lg-5">
             <div>
               <p className={styles.contacts_form_title}>
-                Or just write me a letter here_
+                Veuillez saisir les informations_
               </p>
               <form action="#">
                 <div className={styles.form_group}>
