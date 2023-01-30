@@ -22,16 +22,6 @@
     position: relative;
   }
 
-  .banner_content h3:after {
-    content: '';
-    width: 410px;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 33%;
-    background: var(--color-black);
-  }
-
   .banner_content h1 {
     margin-top: 20px;
     font-size: 70px;
@@ -185,5 +175,17 @@
 
   .home_banner_area .banner_inner .home_right_image {
     display: none;
+  }
+}
+
+@media (min-width: 1199px) {
+  .home_banner_area .banner_content h3:after {
+    content: '';
+    width: 410px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    background: var(--color-black);
   }
 }

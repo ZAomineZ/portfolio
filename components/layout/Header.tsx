@@ -1,6 +1,7 @@
 import styles from "../../styles/Header.module.scss"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 export function Header() {
   const [isFixed, setIsFixed] = useState<boolean>(false)
@@ -32,7 +33,7 @@ export function Header() {
         >
           <div className={`container ${styles.navbar_container}`}>
             {/* Logo brand */}
-            <a href="components/layout/Header" className={styles.navbar_brand}>
+            <Link href="/" className={styles.navbar_brand}>
               <Image
                 src="/img/logo.png"
                 alt="Logo brand"
@@ -40,7 +41,7 @@ export function Header() {
                 height={35}
                 quality={100}
               />
-            </a>
+            </Link>
             <button
               className={styles.navbar_toggler}
               aria-expanded={collapseShow}
@@ -61,12 +62,12 @@ export function Header() {
               >
                 <li className={`${styles.nav_item} ${styles.active}`}>
                   <a href="#home_banner" className={styles.nav_link}>
-                    Home
+                    Accueil
                   </a>
                 </li>
                 <li className={styles.nav_item}>
                   <a href="#about" className={styles.nav_link}>
-                    About
+                    A Propos
                   </a>
                 </li>
                 <li className={styles.nav_item}>

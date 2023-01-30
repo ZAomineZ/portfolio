@@ -39,7 +39,7 @@ export function Footer() {
                   <GitlabIcon />
                 </a>
                 <a
-                  href="components/layout/Footer#"
+                  href="https://www.linkedin.com/in/vincent-capek-482077252/"
                   target="_blank"
                   rel="noreferrer"
                 >

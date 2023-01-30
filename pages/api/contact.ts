@@ -28,9 +28,7 @@ export default function (req: NextApiRequest, res: any) {
 
   transporter.sendMail(mailData, function (err, info) {
     if (err) {
-      console.log(err)
-    } else {
-      console.log(info)
+      return res.status(200).json({ success: false, message: err })
     }
   })
 
