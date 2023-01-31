@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 
-export function useHash() {
+export function useHash(): [string | null, (newHash: string) => void] {
   const [hash, setHash] = useState<string | null>(null)
 
   const hashChangeHandler = useCallback(() => {
@@ -13,7 +13,7 @@ export function useHash() {
     return () => {
       window.removeEventListener("hashchange", hashChangeHandler)
     }
-  }, [])
+  }, [hash, hashChangeHandler])
 
   const updateHash = useCallback(
     (newHash: string) => {

@@ -26,6 +26,8 @@ export function Header() {
     }
   }
 
+  console.log(hash)
+
   return (
     <header
       className={`${styles.header} ${isFixed ? styles.navbar_fixed : ""}`}
@@ -36,7 +38,11 @@ export function Header() {
         >
           <div className={`container ${styles.navbar_container}`}>
             {/* Logo brand */}
-            <Link href="/" className={styles.navbar_brand}>
+            <Link
+              href="/"
+              className={styles.navbar_brand}
+              onClick={() => updateHash("")}
+            >
               <Image
                 src="/img/logo.png"
                 alt="Logo brand"
@@ -65,7 +71,7 @@ export function Header() {
               >
                 <li
                   className={`${styles.nav_item} ${
-                    hash === "#home_banner" || hash === "" && styles.active
+                    (hash === "#home_banner" || hash === "") && styles.active
                   }`}
                 >
                   <a href="#home_banner" className={styles.nav_link}>
