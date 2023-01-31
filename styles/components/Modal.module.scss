@@ -146,6 +146,32 @@
     padding-top: 10px;
   }
 
+  .modal_body .modal_url {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .modal_body .modal_url .modal_url_title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 15px;
+    padding-top: 10px;
+  }
+
+  .modal_body .modal_url .modal_url_link {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+
+    &:hover {
+      color: var(--color-purple) !important;
+    }
+  }
+
   .tags {
     padding: 0;
   }

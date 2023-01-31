@@ -51,21 +51,43 @@ export function Modal({ project }: Props) {
               className={`${styles.modal_body} col-md-11 col-lg-9 ml_auto mr_auto`}
             >
               <p className={styles.modal_title}>{project?.title}</p>
-              <img
-                src={project?.image}
-                className={styles.modal_image}
-                alt=""
-              />
+              <img src={project?.image} className={styles.modal_image} alt="" />
 
               <p className={styles.modal_description}>{project?.description}</p>
               <div className={styles.modal_stack}>
-                <p className={styles.modal_stack_title}>Using stack:</p>
+                <p className={styles.modal_stack_title}>Technos utilisé:</p>
                 <ul className={styles.tags}>
                   {project?.stacks.map((stack, index) => {
                     return <li key={index + 1}>{stack}</li>
                   })}
                 </ul>
               </div>
+              {project?.gitlab_url && (
+                <div className={styles.modal_url}>
+                  <p className={styles.modal_url_title}>Gitlab URL:</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={project?.gitlab_url}
+                    className={styles.modal_url_link}
+                  >
+                    {project?.gitlab_url}
+                  </a>
+                </div>
+              )}
+              {project?.youtube_url && (
+                <div className={styles.modal_url}>
+                  <p className={styles.modal_url_title}>Demo:</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={project?.youtube_url}
+                    className={styles.modal_url_link}
+                  >
+                    {project?.youtube_url}
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>

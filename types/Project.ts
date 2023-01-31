@@ -5,4 +5,6 @@ export type Project = {
   stacks: string[]
   type: string
   image: string
+  gitlab_url?: string
+  youtube_url?: string
 }

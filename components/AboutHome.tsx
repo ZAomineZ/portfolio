@@ -24,6 +24,7 @@ export function AboutHome() {
             <div className={`text_left ${styles.main_title}`}>
               <h2>Qui suis-je ?</h2>
               <p>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Je m'appelle Vincent, j'ai 22 ans, je suis développeur Web
                 FullStack PHP.
               </p>

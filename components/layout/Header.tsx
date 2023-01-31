@@ -2,8 +2,11 @@ import styles from "../../styles/Header.module.scss"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { useHash } from "../../hooks/useHash"
 
 export function Header() {
+  const [hash, updateHash] = useHash()
+
   const [isFixed, setIsFixed] = useState<boolean>(false)
   const [collapseShow, setCollapseShow] = useState<boolean>(false)
 
@@ -60,27 +63,47 @@ export function Header() {
               <ul
                 className={`${styles.nav} ${styles.navbar_nav} ${styles.menu_nav} justify_content_end`}
               >
-                <li className={`${styles.nav_item} ${styles.active}`}>
+                <li
+                  className={`${styles.nav_item} ${
+                    hash === "#home_banner" || hash === "" && styles.active
+                  }`}
+                >
                   <a href="#home_banner" className={styles.nav_link}>
                     Accueil
                   </a>
                 </li>
-                <li className={styles.nav_item}>
+                <li
+                  className={`${styles.nav_item} ${
+                    hash === "#about" && styles.active
+                  }`}
+                >
                   <a href="#about" className={styles.nav_link}>
                     A Propos
                   </a>
                 </li>
-                <li className={styles.nav_item}>
+                <li
+                  className={`${styles.nav_item} ${
+                    hash === "#services" && styles.active
+                  }`}
+                >
                   <a href="#services" className={styles.nav_link}>
                     Services
                   </a>
                 </li>
-                <li className={styles.nav_item}>
+                <li
+                  className={`${styles.nav_item} ${
+                    hash === "#portfolio" && styles.active
+                  }`}
+                >
                   <a href="#portfolio" className={styles.nav_link}>
                     Portfolio
                   </a>
                 </li>
-                <li className={styles.nav_item}>
+                <li
+                  className={`${styles.nav_item} ${
+                    hash === "#contact" && styles.active
+                  }`}
+                >
                   <a href="#contact" className={styles.nav_link}>
                     Contact
                   </a>

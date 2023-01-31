@@ -51,7 +51,7 @@ export function Footer() {
         </div>
         <div className={`row justify_content_center ${styles.footer_bottom}`}>
           <p className="col-lg-8 col-sm-12">
-            © {new Date()?.getFullYear()} Vincent Capek. All Rights Reserved
+            © {new Date()?.getFullYear()} Vincent Capek. Tous droits réservés
           </p>
         </div>
       </div>

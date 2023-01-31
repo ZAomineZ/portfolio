@@ -112,7 +112,9 @@ export function SectionPortfolio() {
                     <p className={styles.project_card_description}>
                       {project.description}
                     </p>
-                    <p className={styles.project_card_stack}>Used stack:</p>
+                    <p className={styles.project_card_stack}>
+                      Technos utilisé:
+                    </p>
                     <ul className={styles.tags}>
                       {project.stacks.map((stack, index) => (
                         <li key={index + 1}>{stack}</li>

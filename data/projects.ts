@@ -7,6 +7,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "LARAVEL", "PUSHER", "JavaScript", "React"],
     type: "backend",
     image: "/img/projects/EventApp.png",
+    gitlab_url: "https://gitlab.com/Bluup-Aomine/eventsprojectlaravel",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "PHP", "React", "JavaScript"],
     type: "backend",
     image: "/img/projects/Machinools.png",
+    gitlab_url: "https://gitlab.com/Bluup-Aomine/seo_project",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "SVELTE", "Ruby", "Rails", "Javascript"],
     type: "frontend",
     image: "/img/projects/CMSApp.png",
+    gitlab_url: "https://gitlab.com/Bluup-Aomine/cmsrails",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "VUEJS", "JavaScript"],
     type: "frontend",
     image: "/img/projects/PicsRandomApp.png",
+    gitlab_url: "https://gitlab.com/Bluup-Aomine/pics_ramdom",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "LARAVEL", "JavaScript", "Stripe"],
     type: "backend",
     image: "/img/projects/PoeAndTikApp.png",
+    gitlab_url: "https://gitlab.com/Bluup-Aomine/ecommerce_laravel",
   },
   {
     id: 6,
@@ -61,6 +66,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "AdonisJS", "Node", "JavaScript", "Vue3"],
     type: "backend",
     image: "/img/projects/QuizApp.png",
+    gitlab_url: "https://gitlab.com/Bluup-Aomine/quizz_app",
   },
   {
     id: 8,
@@ -70,6 +76,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "NextJS", "React", "JavaScript", "Typescript"],
     type: "frontend",
     image: "/img/projects/PokemonApp.png",
+    gitlab_url: "https://gitlab.com/Bluup-Aomine/next_poke_api",
   },
   {
     id: 9,
@@ -87,6 +94,7 @@ export const ProjectsData = [
     ],
     type: "backend",
     image: "/img/projects/CrawlerApp.png",
+    youtube_url: "https://www.youtube.com/watch?v=nm7cItMuZCo",
   },
   {
     id: 10,
@@ -95,5 +103,6 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "React", "NextJS"],
     type: "frontend",
     image: "/img/projects/PortfolioApp.png",
+    gitlab_url: "https://gitlab.com/Bluup-Aomine/portfolio",
   },
 ]

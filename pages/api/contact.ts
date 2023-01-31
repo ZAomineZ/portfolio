@@ -20,8 +20,8 @@ export default function (req: NextApiRequest, res: any) {
     from: req.body.email,
     to: emailAuth,
     replyTo: req.body.email,
-    subject: `Message from ${req.body.name}`,
-    text: req.body.message + " | Sent from: " + req.body.email,
+    subject: `Message depuis ${req.body.name}`,
+    text: req.body.message + " | Message envoyé par: " + req.body.email,
     html: `<div>${req.body.message}</div><p>Sent from:
     ${req.body.email}</p>`,
   }
