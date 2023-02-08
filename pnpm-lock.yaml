@@ -11,6 +11,7 @@ specifiers:
   eslint-config-next: 13.0.2
   locomotive-scroll: ^4.1.4
   next: 13.0.2
+  next-validations: ^0.3.1
   nodemailer: ^6.8.0
   prettier: 2.7.1
   react: 18.2.0
@@ -19,6 +20,7 @@ specifiers:
   sass: ^1.56.1
   sweetalert: ^2.1.2
   typescript: 4.8.4
+  yup: ^1.0.0
 
 dependencies:
   '@types/node': 18.11.9
@@ -30,6 +32,7 @@ dependencies:
   eslint-config-next: 13.0.2_yv3nvntfnealqm77uomj2fi4ki
   locomotive-scroll: 4.1.4
   next: 13.0.2_m5sxuueb27gk6ddc5gums6vtgq
+  next-validations: 0.3.1_next@13.0.2
   nodemailer: 6.8.0
   react: 18.2.0
   react-animations: 1.0.0
@@ -37,6 +40,7 @@ dependencies:
   sass: 1.56.1
   sweetalert: 2.1.2
   typescript: 4.8.4
+  yup: 1.0.0
 
 devDependencies:
   '@types/nodemailer': 6.4.6
@@ -1463,6 +1467,16 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
+  /next-validations/0.3.1_next@13.0.2:
+    resolution: {integrity: sha512-oA75bp4LdKqegjcM2H380Q+ETXjr1ayWi+oUu/miWfvh4Eig1/niTybfEjiigRpn1oElvSgnmUuIyPvFVA11+g==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      next: '*'
+    dependencies:
+      next: 13.0.2_m5sxuueb27gk6ddc5gums6vtgq
+      type-fest: 3.2.0
+    dev: false
+
   /next/13.0.2_m5sxuueb27gk6ddc5gums6vtgq:
     resolution: {integrity: sha512-uQ5z5e4D9mOe8+upy6bQdYYjo/kk1v3jMW87kTy2TgAyAsEO+CkwRnMgyZ4JoHEnhPZLHwh7dk0XymRNLe1gFw==}
     engines: {node: '>=14.6.0'}
@@ -1679,6 +1693,10 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
+    dev: false
+
+  /property-expr/2.0.5:
+    resolution: {integrity: sha512-IJUkICM5dP5znhCckHSv30Q4b5/JA5enCtkRHYaOVOAocnH/1BQEYTC5NMfT3AVl/iXKdr3aqQbQn9DxyWknwA==}
     dev: false
 
   /punycode/2.1.1:
@@ -1938,6 +1956,10 @@ packages:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: false
 
+  /tiny-case/1.0.3:
+    resolution: {integrity: sha512-Eet/eeMhkO6TX8mnUteS9zgPbUMQa4I6Kkp5ORiBD5476/m+PIRiumP5tmh5ioJpH7k51Kehawy2UDfsnxxY8Q==}
+    dev: false
+
   /tiny-emitter/1.2.0:
     resolution: {integrity: sha512-rWjF00inHeWtT5UbQYAXoMI4hL6TRMqohuKCsODyPYYmfAxqfMnXLsIeNrbdPEkNxlk++rojVilTnI9IVmEBtA==}
     dev: false
@@ -1947,6 +1969,10 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: false
+
+  /toposort/2.0.2:
+    resolution: {integrity: sha512-0a5EOkAUp8D4moMi2W8ZF8jcga7BgZd91O/yabJCFY8az+XSzeGyTKs0Aoo897iV1Nj6guFq8orWDS96z91oGg==}
     dev: false
 
   /tsconfig-paths/3.14.1:
@@ -1986,6 +2012,16 @@ packages:
   /type-fest/0.20.2:
     resolution: {integrity: sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==}
     engines: {node: '>=10'}
+    dev: false
+
+  /type-fest/2.19.0:
+    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
+    engines: {node: '>=12.20'}
+    dev: false
+
+  /type-fest/3.2.0:
+    resolution: {integrity: sha512-Il3wdLRzWvbAEtocgxGQA9YOoRVeVUGOMBtel5LdEpNeEAol6GJTLw8GbX6Z8EIMfvfhoOXs2bwOijtAZdK5og==}
+    engines: {node: '>=14.16'}
     dev: false
 
   /typescript/4.8.4:
@@ -2064,4 +2100,13 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: false
+
+  /yup/1.0.0:
+    resolution: {integrity: sha512-bRZIyMkoe212ahGJTE32cr2dLkJw53Va+Uw5mzsBKpcef9zCGQ23k/xtpQUfGwdWPKvCIlR8CzFwchs2rm2XpQ==}
+    dependencies:
+      property-expr: 2.0.5
+      tiny-case: 1.0.3
+      toposort: 2.0.2
+      type-fest: 2.19.0
     dev: false

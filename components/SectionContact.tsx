@@ -19,7 +19,9 @@ export function SectionContact() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then((r) => {
+    }).then(async (r) => {
+      let json = await r.json()
+
       if (r.status === 200) {
         swal("Bravo !", "Votre message as bien était envoyé !", "success").then(
           (r) => r
@@ -28,6 +30,12 @@ export function SectionContact() {
         setName("")
         setEmail("")
         setMessage("")
+      } else {
+        swal(
+          "Attention",
+          "Une erreur est survenue lors du traitement de vos données, veuillez réessayer !",
+          "error"
+        ).then((r) => r)
       }
     })
   }

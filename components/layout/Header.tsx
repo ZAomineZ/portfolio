@@ -26,8 +26,6 @@ export function Header() {
     }
   }
 
-  console.log(hash)
-
   return (
     <header
       className={`${styles.header} ${isFixed ? styles.navbar_fixed : ""}`}
