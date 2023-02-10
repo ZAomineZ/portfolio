@@ -8,7 +8,7 @@ export function SectionContact() {
   const [message, setMessage] = useState<string>("")
   const [buttonDisabled, setButtonDisabled] = useState<boolean>(false)
 
-  const handleSubmit = (e: MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = async (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
 
     setButtonDisabled((buttonDisabled) => !buttonDisabled)
@@ -115,14 +115,15 @@ export function SectionContact() {
                     <i className="mdi mdi-close"></i>
                   </span>
                 </div>
-                <button
-                  className={styles.button}
-                  type="submit"
-                  onClick={(e) => handleSubmit(e)}
-                  disabled={buttonDisabled}
-                >
-                  Envoyer
-                </button>
+                {!buttonDisabled && (
+                  <button
+                    className={styles.button}
+                    type="submit"
+                    onClick={(e) => handleSubmit(e)}
+                  >
+                    Envoyer
+                  </button>
+                )}
               </form>
             </div>
           </div>
