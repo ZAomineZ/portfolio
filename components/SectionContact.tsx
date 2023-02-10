@@ -6,9 +6,12 @@ export function SectionContact() {
   const [name, setName] = useState<string>("")
   const [email, setEmail] = useState<string>("")
   const [message, setMessage] = useState<string>("")
+  const [buttonDisabled, setButtonDisabled] = useState<boolean>(false)
 
   const handleSubmit = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
+
+    setButtonDisabled((buttonDisabled) => !buttonDisabled)
 
     let data = { name, email, message }
 
@@ -20,8 +23,6 @@ export function SectionContact() {
       },
       body: JSON.stringify(data),
     }).then(async (r) => {
-      let json = await r.json()
-
       if (r.status === 200) {
         new Swal(
           "Bravo !",
@@ -29,6 +30,7 @@ export function SectionContact() {
           "success"
         ).then((r: any) => r)
 
+        setButtonDisabled((buttonDisabled) => !buttonDisabled)
         setName("")
         setEmail("")
         setMessage("")
@@ -38,6 +40,8 @@ export function SectionContact() {
           "Une erreur est survenue lors du traitement de vos données, veuillez réessayer !",
           "error"
         ).then((r: any) => r)
+
+        setButtonDisabled((buttonDisabled) => !buttonDisabled)
       }
     })
   }
@@ -115,6 +119,7 @@ export function SectionContact() {
                   className={styles.button}
                   type="submit"
                   onClick={(e) => handleSubmit(e)}
+                  disabled={buttonDisabled}
                 >
                   Envoyer
                 </button>
