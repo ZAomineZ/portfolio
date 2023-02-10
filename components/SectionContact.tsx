@@ -1,7 +1,6 @@
 import styles from "../styles/Contact.module.scss"
 import { MouseEvent, useState } from "react"
-// @ts-ignore
-import swal from "sweetalert/dist/sweetalert.min"
+import Swal from "sweetalert2/dist/sweetalert2.js"
 
 export function SectionContact() {
   const [name, setName] = useState<string>("")
@@ -24,15 +23,17 @@ export function SectionContact() {
       let json = await r.json()
 
       if (r.status === 200) {
-        swal("Bravo !", "Votre message as bien était envoyé !", "success").then(
-          (r: any) => r
-        )
+        new Swal(
+          "Bravo !",
+          "Votre message as bien était envoyé !",
+          "success"
+        ).then((r: any) => r)
 
         setName("")
         setEmail("")
         setMessage("")
       } else {
-        swal(
+        new Swal(
           "Attention",
           "Une erreur est survenue lors du traitement de vos données, veuillez réessayer !",
           "error"
