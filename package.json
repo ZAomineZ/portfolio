@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@types/nodemailer": "^6.4.6",
+    "@types/sweetalert": "^2.0.4",
     "prettier": "2.7.1"
   }
 }

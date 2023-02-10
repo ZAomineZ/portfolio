@@ -42,7 +42,7 @@ export function Header() {
               onClick={() => updateHash("")}
             >
               <Image
-                src="/img/logo.png"
+                src="/img/logo-new.png"
                 alt="Logo brand"
                 width={140}
                 height={35}

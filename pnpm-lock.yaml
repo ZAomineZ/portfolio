@@ -6,6 +6,7 @@ specifiers:
   '@types/react': 18.0.25
   '@types/react-animations': ^1.0.0
   '@types/react-dom': 18.0.8
+  '@types/sweetalert': ^2.0.4
   dotenv: ^16.0.3
   eslint: 8.22.0
   eslint-config-next: 13.0.2
@@ -44,6 +45,7 @@ dependencies:
 
 devDependencies:
   '@types/nodemailer': 6.4.6
+  '@types/sweetalert': 2.0.4
   prettier: 2.7.1
 
 packages:
@@ -295,6 +297,13 @@ packages:
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: false
+
+  /@types/sweetalert/2.0.4:
+    resolution: {integrity: sha512-BSO9bAIUh/h1mfQgyMLniwTjysCV5Ktmy5JULmantIJBuZtHilIWNuM+O6myboyyHNv9uASXTc7Unh9GGp4srg==}
+    deprecated: This is a stub types definition for SweetAlert (https://github.com/t4t5/sweetalert/). SweetAlert provides its own type definitions, so you don't need @types/sweetalert installed!
+    dependencies:
+      sweetalert: 2.1.2
+    dev: true
 
   /@typescript-eslint/parser/5.42.1_yv3nvntfnealqm77uomj2fi4ki:
     resolution: {integrity: sha512-kAV+NiNBWVQDY9gDJDToTE/NO8BHi4f6b7zTsVAJoTkmB/zlfOpiEVBzHOKtlgTndCKe8vj9F/PuolemZSh50Q==}
@@ -696,7 +705,6 @@ packages:
 
   /es6-object-assign/1.1.0:
     resolution: {integrity: sha512-MEl9uirslVwqQU369iHNWZXsI8yaZYGg/D65aOgZkeyFJwHYSxilf7rQzXKI7DdDuBPrBXbfk3sl9hJhmd5AUw==}
-    dev: false
 
   /escape-string-regexp/4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
@@ -1685,7 +1693,6 @@ packages:
 
   /promise-polyfill/6.1.0:
     resolution: {integrity: sha512-g0LWaH0gFsxovsU7R5LrrhHhWAWiHRnh1GPrhXnPgYsDkIqjRYUYSZEsej/wtleDrz5xVSIDbeKfidztp2XHFQ==}
-    dev: false
 
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -1950,7 +1957,6 @@ packages:
     dependencies:
       es6-object-assign: 1.1.0
       promise-polyfill: 6.1.0
-    dev: false
 
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}

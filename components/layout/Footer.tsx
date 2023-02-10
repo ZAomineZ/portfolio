@@ -14,7 +14,7 @@ export function Footer() {
               <div className={styles.footer_logo}>
                 <a href="components/layout/Footer#">
                   <Image
-                    src="/img/logo.png"
+                    src="/img/logo-new.png"
                     alt="Logo brand"
                     width={140}
                     height={35}
