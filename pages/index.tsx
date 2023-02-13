@@ -54,12 +54,7 @@ function Home({ dataProjects }: IProps) {
   )
 }
 
-export async function getServerSideProps({ res }: GetServerSidePropsContext) {
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  )
-
+export async function getStaticProps() {
   return {
     props: { dataProjects: ProjectsData }, // will be passed to the page component as props
   }
