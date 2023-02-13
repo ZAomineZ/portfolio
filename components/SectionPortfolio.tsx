@@ -3,7 +3,6 @@ import Image from "next/image"
 import { Modal } from "./Modal"
 import { useEffect, useState } from "react"
 import { Project } from "../types/Project"
-import { ProjectsData } from "../data/projects"
 import { fadeInUp } from "react-animations"
 import { subscribe } from "../utils/Event"
 
@@ -12,14 +11,11 @@ interface IProps {
 }
 
 function SectionPortfolio({ dataProjects }: IProps) {
-  const [projects, setProjects] = useState<Project[]>([])
   const [projectCurrent, setProjectCurrent] = useState<Project | null>(null)
   const [optionProject, setOptionProject] = useState<string>("all")
   const [animate, setAnimate] = useState<boolean>(false)
 
   useEffect(() => {
-    setProjects(dataProjects)
-
     setAnimate(true)
     setTimeout(() => {
       setAnimate(false)
@@ -36,13 +32,6 @@ function SectionPortfolio({ dataProjects }: IProps) {
     setOptionProject(option)
 
     setAnimate(true)
-
-    if (option !== "all") {
-      setProjects(dataProjects.filter((project) => project.type === option))
-    }
-    if (option === "all") {
-      setProjects(dataProjects)
-    }
 
     setTimeout(() => {
       setAnimate(false)
@@ -89,48 +78,54 @@ function SectionPortfolio({ dataProjects }: IProps) {
             </div>
           </div>
           <div id="portfolio_card">
-            {projects &&
-              projects.map((project) => {
-                return (
-                  <div
-                    className={`row ${styles.project_card} ${
-                      animate && styles.project_card_animation
-                    }`}
-                    key={project.id}
-                    onClick={() => setProjectCurrent(project)}
-                  >
-                    <div
-                      className={`col-md-6 col-lg-5 ${styles.project_card_image}`}
-                    >
-                      <Image
-                        src={`${project.image}`}
-                        alt="Project image"
-                        quality={100}
-                        width={940}
-                        height={720}
-                      />
-                    </div>
-                    <div
-                      className={`col-md-6 col-lg-7 ${styles.project_card_info}`}
-                    >
-                      <h3 className={styles.project_card_title}>
-                        {project.title}
-                      </h3>
-                      <p className={styles.project_card_description}>
-                        {project.description}
-                      </p>
-                      <p className={styles.project_card_stack}>
-                        Technos utilisé:
-                      </p>
-                      <ul className={styles.tags}>
-                        {project.stacks.map((stack, index) => (
-                          <li key={index + 1}>{stack}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+            {dataProjects &&
+              dataProjects
+                .filter((project) =>
+                  optionProject !== "all"
+                    ? project.type === optionProject
+                    : project.type === "backend" || project.type === "frontend"
                 )
-              })}
+                .map((project) => {
+                  return (
+                    <div
+                      className={`row ${styles.project_card} ${
+                        animate && styles.project_card_animation
+                      }`}
+                      key={project.id}
+                      onClick={() => setProjectCurrent(project)}
+                    >
+                      <div
+                        className={`col-md-6 col-lg-5 ${styles.project_card_image}`}
+                      >
+                        <Image
+                          src={`${project.image}`}
+                          alt="Project image"
+                          quality={100}
+                          width={940}
+                          height={720}
+                        />
+                      </div>
+                      <div
+                        className={`col-md-6 col-lg-7 ${styles.project_card_info}`}
+                      >
+                        <h3 className={styles.project_card_title}>
+                          {project.title}
+                        </h3>
+                        <p className={styles.project_card_description}>
+                          {project.description}
+                        </p>
+                        <p className={styles.project_card_stack}>
+                          Technos utilisé:
+                        </p>
+                        <ul className={styles.tags}>
+                          {project.stacks.map((stack, index) => (
+                            <li key={index + 1}>{stack}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )
+                })}
           </div>
         </div>
       </section>

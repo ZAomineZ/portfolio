@@ -23,7 +23,7 @@ function Home({ dataProjects }: IProps) {
           name="description"
           content="Je m'appelle Vincent, j'ai 22 ans, je suis développeur Web FullStack PHP."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="robots" content="follow,index" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
