@@ -27,6 +27,8 @@ export function SectionPortfolio() {
   }, [])
 
   const updateOptionProject = (option: string) => {
+    if (animate) return
+
     setOptionProject(option)
 
     setAnimate(true)
