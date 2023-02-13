@@ -3,11 +3,18 @@ import { AboutHome } from "../components/AboutHome"
 import { Header } from "../components/layout/Header"
 import { SectionHomeBanner } from "../components/SectionHomeBanner"
 import { SectionFeatures } from "../components/SectionFeatures"
-import { SectionPortfolio } from "../components/SectionPortfolio"
+import SectionPortfolio from "../components/SectionPortfolio"
 import { SectionContact } from "../components/SectionContact"
 import { Footer } from "../components/layout/Footer"
+import { ProjectsData } from "../data/projects"
+import { Project } from "../types/Project"
+import { GetServerSideProps, GetServerSidePropsContext } from "next"
 
-export default function Home() {
+interface IProps {
+  dataProjects: Project[]
+}
+
+function Home({ dataProjects }: IProps) {
   return (
     <>
       <Head>
@@ -19,10 +26,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet"
         />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
@@ -36,7 +45,7 @@ export default function Home() {
       {/* Section services */}
       <SectionFeatures />
       {/* Section portfolio */}
-      <SectionPortfolio />
+      <SectionPortfolio dataProjects={dataProjects} />
       {/* Section contact */}
       <SectionContact />
       {/* Section footer */}
@@ -44,3 +53,16 @@ export default function Home() {
     </>
   )
 }
+
+export async function getServerSideProps({ res }: GetServerSidePropsContext) {
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  )
+
+  return {
+    props: { dataProjects: ProjectsData }, // will be passed to the page component as props
+  }
+}
+
+export default Home
