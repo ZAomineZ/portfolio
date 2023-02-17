@@ -8,7 +8,6 @@ import { SectionContact } from "../components/SectionContact"
 import { Footer } from "../components/layout/Footer"
 import { ProjectsData } from "../data/projects"
 import { Project } from "../types/Project"
-import { GetServerSideProps, GetServerSidePropsContext } from "next"
 
 interface IProps {
   dataProjects: Project[]

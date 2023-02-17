@@ -66,7 +66,7 @@ export function SectionFeatures() {
                 height={69}
               />
               <h4>Référencement</h4>
-              <p>Code optimiser pour du référencement naturel</p>
+              <p>Code optimisé pour du référencement naturel</p>
             </div>
           </div>
         </div>

@@ -55,7 +55,7 @@ export function Modal({ project }: Props) {
 
               <p className={styles.modal_description}>{project?.description}</p>
               <div className={styles.modal_stack}>
-                <p className={styles.modal_stack_title}>Technos utilisé:</p>
+                <p className={styles.modal_stack_title}>Technos utilisées:</p>
                 <ul className={styles.tags}>
                   {project?.stacks.map((stack, index) => {
                     return <li key={index + 1}>{stack}</li>
