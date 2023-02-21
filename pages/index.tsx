@@ -35,6 +35,17 @@ function Home({ dataProjects }: IProps) {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <script async src="//static.getclicky.com/101398713.js"></script>
+        <noscript>
+          <p>
+            <img
+              alt="Clicky"
+              width="1"
+              height="1"
+              src="//in.getclicky.com/101398713ns.gif"
+            />
+          </p>
+        </noscript>
       </Head>
       <Header />
       {/* Section home banner */}
