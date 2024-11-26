@@ -20,7 +20,7 @@ function Home({ dataProjects }: IProps) {
         <title>Portfolio Vincent Capek | Développeur PHP Fullstack</title>
         <meta
           name="description"
-          content="Je m'appelle Vincent, j'ai 22 ans, je suis développeur Web FullStack PHP."
+          content="Je m'appelle Vincent, j'ai 24 ans, je suis développeur Web FullStack PHP."
         />
         <meta name="robots" content="follow,index" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
