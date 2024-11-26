@@ -7,7 +7,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "LARAVEL", "PUSHER", "JavaScript", "React"],
     type: "backend",
     image: "/img/projects/EventApp.png",
-    gitlab_url: "https://github.com/ZAomineZ/eventsprojectlaravel",
+    github_url: "https://github.com/ZAomineZ/eventsprojectlaravel",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "PHP", "React", "JavaScript"],
     type: "backend",
     image: "/img/projects/Machinools.png",
-    gitlab_url: "https://github.com/ZAomineZ/seo_project",
+    github_url: "https://github.com/ZAomineZ/seo_project",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "SVELTE", "Ruby", "Rails", "Javascript"],
     type: "frontend",
     image: "/img/projects/CMSApp.png",
-    gitlab_url: "https://github.com/ZAomineZ/CMSRails",
+    github_url: "https://github.com/ZAomineZ/CMSRails",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "VUEJS", "JavaScript"],
     type: "frontend",
     image: "/img/projects/PicsRandomApp.png",
-    gitlab_url: "https://github.com/ZAomineZ/waifu_album",
+    github_url: "https://github.com/ZAomineZ/waifu_album",
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "AdonisJS", "Node", "JavaScript", "Vue3"],
     type: "backend",
     image: "/img/projects/QuizApp.png",
-    gitlab_url: "https://github.com/ZAomineZ/quizz_app",
+    github_url: "https://github.com/ZAomineZ/quizz_app",
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "NextJS", "React", "JavaScript", "Typescript"],
     type: "frontend",
     image: "/img/projects/PokemonApp.png",
-    gitlab_url: "https://github.com/ZAomineZ/NextPokemon",
+    github_url: "https://github.com/ZAomineZ/NextPokemon",
   },
   {
     id: 9,
@@ -105,7 +105,7 @@ export const ProjectsData = [
     ],
     type: "backend",
     image: "/img/projects/pencil_pix.png",
-    gitlab_url: "https://github.com/ZAomineZ/pencil_pix",
+    github_url: "https://github.com/ZAomineZ/pencil_pix",
   },
   {
     id: 11,
@@ -114,6 +114,6 @@ export const ProjectsData = [
     stacks: ["HTML5", "CSS3", "React", "NextJS"],
     type: "frontend",
     image: "/img/projects/PortfolioApp.png",
-    gitlab_url: "https://gitlab.com/Bluup-Aomine/portfolio",
+    github_url: "https://github.com/ZAomineZ/portfolio",
   },
 ]
