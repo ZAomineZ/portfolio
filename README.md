@@ -40,13 +40,13 @@ Bienvenue sur mon portfolio ! Vous trouverez ci-dessous une liste de mes projets
 
 ![MyDramaList Like](public/img/projects/MyDramaListLike.png)
 
-### 7. [Quiz App](https://gitlab.com/Bluup-Aomine/quizz_app)
+### 7. [Quiz App](https://github.com/ZAomineZ/quizz_app)
 - **Description** : Créez et gérez des quiz sur diverses thématiques.
 - **Technologies** : HTML5, CSS3, AdonisJS, Node, JavaScript, Vue3
 
 ![Quiz App](public/img/projects/QuizApp.png)
 
-### 8. [Pokemon Search App](https://gitlab.com/Bluup-Aomine/next_poke_api)
+### 8. [Pokemon Search App](https://github.com/ZAomineZ/NextPokemon)
 - **Description** : Application pour rechercher des Pokémon dans le Pokédex national via PokeAPI.
 - **Technologies** : HTML5, CSS3, NextJS, React, JavaScript, Typescript
 
@@ -58,7 +58,7 @@ Bienvenue sur mon portfolio ! Vous trouverez ci-dessous une liste de mes projets
 
 ![Crawler Monitor App](public/img/projects/CrawlerApp.png)
 
-### 10. [Portfolio](https://gitlab.com/Bluup-Aomine/portfolio)
+### 10. [Portfolio](https://github.com/ZAomineZ/portfolio)
 - **Description** : Mon portfolio personnel présentant mes projets réalisés.
 - **Technologies** : HTML5, CSS3, React, NextJS
 
