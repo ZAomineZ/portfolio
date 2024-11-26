@@ -6,5 +6,6 @@ export type Project = {
   type: string
   image: string
   gitlab_url?: string
+  github_url?: string
   youtube_url?: string
 }

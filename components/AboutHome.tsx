@@ -25,12 +25,24 @@ export function AboutHome() {
               <h2>Qui suis-je ?</h2>
               <p>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Je m'appelle Vincent, j'ai 22 ans, je suis développeur Web
-                FullStack PHP.
+                Bonjour, je m'appelle Vincent, j'ai 24 ans et je suis
+                développeur web Full-Stack freelance spécialisé en PHP, avec une
+                expertise en Laravel pour le back-end et Vue 3 pour le
+                front-end.
               </p>
               <p>
-                Je code principalement en laravel coté backend et avec Vue 3
-                coté front-end.
+                Passionné par le développement web, je conçois des applications
+                modernes, performantes et adaptées aux besoins de mes clients,
+                en alliant robustesse, esthétique et fluidité. Mon approche
+                polyvalente me permet de gérer des projets de bout en bout, de
+                la création d'API à l'intégration d'interfaces utilisateur
+                intuitives.
+              </p>
+              <p>
+                En utilisant les dernières technologies et bonnes pratiques, je
+                m'engage à fournir un code de qualité, optimisé et facile à
+                maintenir, tout en restant à l’écoute des attentes spécifiques
+                de chaque client.
               </p>
             </div>
           </div>

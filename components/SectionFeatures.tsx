@@ -9,7 +9,7 @@ export function SectionFeatures() {
           <div className="text_center col-lg-8">
             <div className={styles.main_title}>
               <h2>Services</h2>
-              <p>Voici les services que je vous propose</p>
+              <p>Je vous propose des services sur mesure en développement web, incluant la création d'applications performantes avec Laravel pour le back-end et Vue 3 pour le front-end.</p>
             </div>
           </div>
         </div>

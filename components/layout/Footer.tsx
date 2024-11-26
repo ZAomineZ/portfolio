@@ -3,6 +3,8 @@ import Image from "next/image"
 import { TwitterIcon } from "../icons/Twitter"
 import { GitlabIcon } from "../icons/Gitlab"
 import { LinkedinIcon } from "../icons/Linkedin"
+import { GithubIcon } from "../icons/Github"
+import { DevToIcon } from "../icons/Dev-to"
 
 export function Footer() {
   return (
@@ -39,11 +41,25 @@ export function Footer() {
                   <GitlabIcon />
                 </a>
                 <a
+                  href="https://github.com/ZAomineZ"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GithubIcon />
+                </a>
+                <a
                   href="https://www.linkedin.com/in/vincent-capek-482077252/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <LinkedinIcon />
+                </a>
+                <a
+                  href="https://dev.to/blamsa0mine"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <DevToIcon />
                 </a>
               </div>
             </div>
