@@ -109,6 +109,22 @@ export const ProjectsData = [
   },
   {
     id: 11,
+    title: "Streaming Anime",
+    description: "A sleek web application that allows users to discover, filter, and explore an extensive catalog of animes. Featuring personalized recommendations, detailed anime pages, and an intuitive episode navigation system, this platform offers an optimized streaming experience.",
+    stacks: [
+      "HTML5",
+      "CSS3",
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "JavaScript",
+    ],
+    type: "backend",
+    image: "/img/projects/StreamingAnime.png",
+    github_url: "https://github.com/ZAomineZ/laravel_streaming",
+  },
+  {
+    id: 12,
     title: "Portfolio",
     description: "My portfolio is a showcase for all my completed projects, highlighting my skills, expertise and progress as a developer. It reflects my know-how through concrete and varied examples, illustrating my commitment to each project.",
     stacks: ["HTML5", "CSS3", "React", "NextJS"],
