@@ -26,7 +26,7 @@ export function SectionContact() {
       if (r.status === 200) {
         new Swal(
           "Bravo !",
-          "Votre message as bien était envoyé !",
+          "Your message has been sent !",
           "success"
         ).then((r: any) => r)
 
@@ -37,7 +37,7 @@ export function SectionContact() {
       } else {
         new Swal(
           "Attention",
-          "Une erreur est survenue lors du traitement de vos données, veuillez réessayer !",
+          "An error occurred while processing your data, please try again !",
           "error"
         ).then((r: any) => r)
 
@@ -55,7 +55,7 @@ export function SectionContact() {
       <div className={`container ${styles.contact_section}`}>
         <div className="row">
           <div className="col-md-12">
-            <p className={styles.contact_title}>Me Contacter_</p>
+            <p className={styles.contact_title}>Contact me_</p>
           </div>
         </div>
         <div className={`row ${styles.contacts}`}>
@@ -74,13 +74,13 @@ export function SectionContact() {
           <div className="col-md-7 col-lg-5">
             <div>
               <p className={styles.contacts_form_title}>
-                Veuillez saisir les informations_
+                Please enter the information_
               </p>
               <form action="#">
                 <div className={styles.form_group}>
                   <input
                     type="text"
-                    placeholder="Votre nom..."
+                    placeholder="Your name..."
                     required={true}
                     onChange={(e) => setName(e.target.value)}
                     value={name}
@@ -93,7 +93,7 @@ export function SectionContact() {
                 <div className={styles.form_group}>
                   <input
                     type="email"
-                    placeholder="Votre mail..."
+                    placeholder="Your mail..."
                     required={true}
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
@@ -105,7 +105,7 @@ export function SectionContact() {
                 </div>
                 <div className={styles.form_group}>
                   <textarea
-                    placeholder="Votre message..."
+                    placeholder="Your message..."
                     required={true}
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
