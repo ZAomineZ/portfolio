@@ -3,7 +3,7 @@ export const ProjectsData = [
     id: 1,
     title: "Events app",
     description:
-      "Ce projet, réalisé en 2019/2020, a été conçu pour simplifier l'organisation d'événements, qu'ils soient professionnels ou de loisirs. Il intègre un calendrier interactif permettant de planifier et de gérer les événements efficacement. Les participants peuvent être informés en temps réel du lieu, de la date et des détails importants via des notifications. Un système d'administration intuitif a également été développé pour faciliter la création, la modification et la gestion des événements par les organisateurs.",
+      "This project, to be carried out in 2019/2020, has been designed to simplify the organization of events, whether professional or leisure. It incorporates an interactive calendar for efficient event planning and management. Participants can be informed in real time of location, date and important details via notifications. An intuitive administration system has also been developed to make it easy for organizers to create, modify and manage events.",
     stacks: ["HTML5", "CSS3", "LARAVEL", "PUSHER", "JavaScript", "React"],
     type: "backend",
     image: "/img/projects/EventApp.png",
@@ -13,7 +13,7 @@ export const ProjectsData = [
     id: 2,
     title: "Machinools App",
     description:
-      "Machinools est un outil SEO complet qui regroupe plusieurs fonctionnalités essentielles pour accompagner les débutants dans l'optimisation du référencement de leur site web. Intuitif et facile d'accès, il offre une vue d'ensemble des performances SEO et fournit des analyses claires pour aider les utilisateurs à comprendre et améliorer la visibilité de leur site sur les moteurs de recherche.",
+      "Machinools is a comprehensive SEO tool that brings together several essential features to help beginners optimize their website's SEO. Intuitive and easy to use, it offers an overview of SEO performance and provides clear analyses to help users understand and improve their site's visibility on search engines.",
     stacks: ["HTML5", "CSS3", "PHP", "React", "JavaScript"],
     type: "backend",
     image: "/img/projects/Machinools.png",
@@ -23,7 +23,7 @@ export const ProjectsData = [
     id: 3,
     title: "CMSRails App",
     description:
-      "CMSRails est un système de gestion de contenu (CMS) développé avec Ruby on Rails, conçu pour offrir à l'administrateur une solution simple et efficace pour créer et gérer des articles. Il intègre un système de catégories relationnelles, permettant une organisation structurée et intuitive du contenu, idéale pour répondre aux besoins de sites dynamiques et bien structurés.",
+      "CMSRails is a content management system (CMS) developed with Ruby on Rails, designed to offer administrators a simple and effective solution for creating and managing articles. It incorporates a system of relational categories, enabling structured and intuitive organization of content, ideal for meeting the needs of dynamic, well-structured sites.",
     stacks: ["HTML5", "CSS3", "SVELTE", "Ruby", "Rails", "Javascript"],
     type: "frontend",
     image: "/img/projects/CMSApp.png",
@@ -33,7 +33,7 @@ export const ProjectsData = [
     id: 4,
     title: "Pics Anime Random App",
     description:
-      "Ce projet a été réalisé en été 2022, c'est une application Vue.js/TypeScript interactive pour explorer, visualiser et naviguer parmi des albums d'images et de GIFs d'anime/manga. Cette application permet de choisir parmi différentes catégories et d'afficher les images dans une interface utilisateur réactive et attrayante.",
+      "This project was realized in summer 2022, and is an interactive Vue.js/TypeScript application for exploring, viewing and browsing albums of anime/manga images and GIFs. The application lets you choose from different categories and display the images in a responsive and attractive user interface.",
     stacks: ["HTML5", "CSS3", "VUEJS", "JavaScript"],
     type: "frontend",
     image: "/img/projects/PicsRandomApp.png",
@@ -43,7 +43,7 @@ export const ProjectsData = [
     id: 5,
     title: "Poe And Tik",
     description:
-      "POE&TIK est site e-commerce de vente de vêtements vegan qui prone la protection des animaux, ce dernier est codé en laravel coté backend et javascript vanilla coté front-end du site, ce qui permet d'avoir une app solide et robuste.",
+      "POE&TIK is an e-commerce site selling vegan clothing that advocates the protection of animals. The site is coded in laravel on the backend and javascript vanilla on the frontend, resulting in a solid and robust app.",
     stacks: ["HTML5", "CSS3", "LARAVEL", "JavaScript", "Stripe"],
     type: "backend",
     image: "/img/projects/PoeAndTikApp.png",
@@ -53,7 +53,7 @@ export const ProjectsData = [
     id: 6,
     title: "MyDramaList Like",
     description:
-      "MyDramaList Like est un projet développé à l'été 2022, conçu pour rassembler et explorer une vaste collection de dramas coréens, japonais et chinois. L'objectif est d'offrir aux utilisateurs une plateforme intuitive et complète pour découvrir, rechercher et organiser leurs dramas favoris, tout en s'immergeant dans la richesse des cultures asiatiques.",
+      "MyDramaList Like is a project developed in the summer of 2022, designed to bring together and explore a vast collection of Korean, Japanese and Chinese dramas. The aim is to offer users an intuitive and comprehensive platform to discover, search and organize their favorite dramas, while immersing themselves in the richness of Asian cultures.",
     stacks: ["HTML5", "CSS3", "LARAVEL", "JavaScript"],
     type: "backend",
     image: "/img/projects/MyDramaListLike.png",
@@ -62,7 +62,7 @@ export const ProjectsData = [
     id: 7,
     title: "Quiz App",
     description:
-      "Ce projet, conçu en novembre 2022, est une plateforme polyvalente dédiée à la gestion de quiz sur des thématiques variées telles que les mangas, le football, la politique, et bien d'autres. Il offre une interface intuitive pour créer, personnaliser et organiser des quiz adaptés à tous les centres d'intérêt, favorisant ainsi l'apprentissage et le divertissement.",
+      "This project, conceived in November 2022, is a versatile platform dedicated to the management of quizzes on various themes such as manga, soccer, politics and many others. It offers an intuitive interface for creating, customizing and organizing quizzes to suit all interests, promoting learning and entertainment.",
     stacks: ["HTML5", "CSS3", "AdonisJS", "Node", "JavaScript", "Vue3"],
     type: "backend",
     image: "/img/projects/QuizApp.png",
@@ -72,7 +72,7 @@ export const ProjectsData = [
     id: 8,
     title: "Pokemon Search App",
     description:
-      "Cette application offre une expérience interactive pour explorer le Pokédex national en permettant de rechercher des Pokémon via l'API PokéAPI. Grâce à une interface intuitive, les utilisateurs peuvent consulter des informations détaillées sur chaque Pokémon, comme leurs types, statistiques et évolutions, rendant l'exploration du monde Pokémon simple et agréable.",
+      "This application offers an interactive experience for exploring the national Pokédex, allowing users to search for Pokémon via the PokéAPI API. Thanks to an intuitive interface, users can consult detailed information on each Pokémon, such as their types, statistics and evolutions, making exploration of the Pokémon world simple and enjoyable.",
     stacks: ["HTML5", "CSS3", "NextJS", "React", "JavaScript", "Typescript"],
     type: "frontend",
     image: "/img/projects/PokemonApp.png",
@@ -82,7 +82,7 @@ export const ProjectsData = [
     id: 9,
     title: "Crawler Monitor App",
     description:
-      "CrawlerMonitor est un outil SEO avancé, conçu comme un crawler performant pour analyser en profondeur divers facteurs SEO d'un site web. Il permet d'explorer et d'évaluer des aspects clés tels que la structure, les balises, les liens ou encore la performance, offrant ainsi des insights précis pour optimiser la visibilité et le référencement du site.",
+      "CrawlerMonitor is an advanced SEO tool, designed as a high-performance crawler for in-depth analysis of various SEO factors on a website. It explores and evaluates key aspects such as structure, tags, links and performance, offering precise insights for optimizing site visibility and SEO.",
     stacks: [
       "HTML5",
       "CSS3",
@@ -99,7 +99,7 @@ export const ProjectsData = [
   {
     id: 10,
     title: "Pencil Pix",
-    description: "Ce projet propose un script Python permettant de transformer une image en un croquis au crayon grâce à des techniques de traitement d'image intuitives et efficaces. Idéal pour les amateurs de créativité numérique, ce script simplifie le processus de conversion tout en produisant des résultats visuellement impressionnants.",
+    description: "This project features a Python script that transforms an image into a pencil sketch using intuitive and efficient image processing techniques. Ideal for fans of digital creativity, this script simplifies the conversion process while producing visually impressive results.",
     stacks: [
       "Python",
     ],
@@ -110,7 +110,7 @@ export const ProjectsData = [
   {
     id: 11,
     title: "Portfolio",
-    description: "Mon portfolio est une vitrine regroupant l'ensemble de mes projets réalisés, mettant en avant mes compétences, mon expertise et ma progression en tant que développeur. Il reflète mon savoir-faire à travers des exemples concrets et variés, illustrant mon engagement dans chaque réalisation.",
+    description: "My portfolio is a showcase for all my completed projects, highlighting my skills, expertise and progress as a developer. It reflects my know-how through concrete and varied examples, illustrating my commitment to each project.",
     stacks: ["HTML5", "CSS3", "React", "NextJS"],
     type: "frontend",
     image: "/img/projects/PortfolioApp.png",

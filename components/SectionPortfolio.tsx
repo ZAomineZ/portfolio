@@ -115,7 +115,7 @@ function SectionPortfolio({ dataProjects }: IProps) {
                           {project.description}
                         </p>
                         <p className={styles.project_card_stack}>
-                          Technos utilisées:
+                          Technology used:
                         </p>
                         <ul className={styles.tags}>
                           {project.stacks.map((stack, index) => (

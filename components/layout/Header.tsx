@@ -73,7 +73,7 @@ export function Header() {
                   }`}
                 >
                   <a href="#home_banner" className={styles.nav_link}>
-                    Accueil
+                    Home
                   </a>
                 </li>
                 <li
@@ -82,7 +82,7 @@ export function Header() {
                   }`}
                 >
                   <a href="#about" className={styles.nav_link}>
-                    A Propos
+                    About us
                   </a>
                 </li>
                 <li

@@ -23,7 +23,7 @@ export function Footer() {
                     quality={100}
                   />
                 </a>
-                <h4>Suivez-moi</h4>
+                <h4>Follow me</h4>
               </div>
               <div className={styles.footer_social}>
                 <a
@@ -67,7 +67,7 @@ export function Footer() {
         </div>
         <div className={`row justify_content_center ${styles.footer_bottom}`}>
           <p className="col-lg-8 col-sm-12">
-            © {new Date()?.getFullYear()} Vincent Capek. Tous droits réservés
+            © {new Date()?.getFullYear()} Vincent Capek. All rights reserved
           </p>
         </div>
       </div>

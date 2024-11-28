@@ -10,6 +10,7 @@ export function AboutHome() {
       <div className="container">
         <div className="row align_items_center justify_content_start">
           <div className="col-lg-5">
+            <link rel="stylesheet" href="" />
             <div className={styles.about_image}>
               <Image
                 src="/img/about-us.png"
@@ -22,27 +23,21 @@ export function AboutHome() {
           </div>
           <div className="offset_lg_1 col-lg-5">
             <div className={`text_left ${styles.main_title}`}>
-              <h2>Qui suis-je ?</h2>
+              <h2>Who am I ?</h2>
               <p>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Bonjour, je m'appelle Vincent, j'ai 24 ans et je suis
-                développeur web Full-Stack freelance spécialisé en PHP, avec une
-                expertise en Laravel pour le back-end et Vue 3 pour le
-                front-end.
+                Hello, my name is Vincent, I'm 24 years old and I'm a
+                freelance full-stack web developer specializing in PHP, with expertise in Laravel for the back-end and
+                Vue 3 for the front-end.
               </p>
               <p>
-                Passionné par le développement web, je conçois des applications
-                modernes, performantes et adaptées aux besoins de mes clients,
-                en alliant robustesse, esthétique et fluidité. Mon approche
-                polyvalente me permet de gérer des projets de bout en bout, de
-                la création d'API à l'intégration d'interfaces utilisateur
-                intuitives.
+                Passionate about web development, I design modern, high-performance applications tailored to my
+                customers' needs, combining robustness, aesthetics and fluidity. My versatile approach enables me to
+                manage projects from start to finish, from API creation to the integration of intuitive user interfaces.
               </p>
               <p>
-                En utilisant les dernières technologies et bonnes pratiques, je
-                m'engage à fournir un code de qualité, optimisé et facile à
-                maintenir, tout en restant à l’écoute des attentes spécifiques
-                de chaque client.
+                Using the latest technologies and best practices, I'm committed to delivering quality code that's
+                optimized and easy to maintain, while remaining attentive to the specific needs of each customer.
               </p>
             </div>
           </div>

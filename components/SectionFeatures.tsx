@@ -9,7 +9,7 @@ export function SectionFeatures() {
           <div className="text_center col-lg-8">
             <div className={styles.main_title}>
               <h2>Services</h2>
-              <p>Je vous propose des services sur mesure en développement web, incluant la création d'applications performantes avec Laravel pour le back-end et Vue 3 pour le front-end.</p>
+              <p>I offer tailor-made web development services, including the creation of high-performance applications using Laravel for the back-end and Vue 3 for the front-end.</p>
             </div>
           </div>
         </div>
@@ -23,10 +23,9 @@ export function SectionFeatures() {
                 width={63}
                 height={69}
               />
-              <h4>Développement Web</h4>
+              <h4>Web development</h4>
               <p>
-                Création de site web | Application en répondant aux besoins du
-                client
+                Website creation | Application to meet customer needs
               </p>
             </div>
           </div>
@@ -38,10 +37,9 @@ export function SectionFeatures() {
                 width={63}
                 height={69}
               />
-              <h4>Projets Web</h4>
+              <h4>Web projects</h4>
               <p>
-                Création de landing page, site-vitrine, e-commerce et
-                application web
+                Creation of landing pages, window sites, e-commerce and web applications
               </p>
             </div>
           </div>
@@ -53,8 +51,8 @@ export function SectionFeatures() {
                 width={63}
                 height={69}
               />
-              <h4>Multi-Plateforme</h4>
-              <p>Compatibilité tablette & mobile</p>
+              <h4>Multi-Platform</h4>
+              <p>Tablet & mobile compatibility</p>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
@@ -65,8 +63,8 @@ export function SectionFeatures() {
                 width={63}
                 height={69}
               />
-              <h4>Référencement</h4>
-              <p>Code optimisé pour du référencement naturel</p>
+              <h4>SEO</h4>
+              <p>Code optimized for SEO</p>
             </div>
           </div>
         </div>

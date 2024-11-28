@@ -55,7 +55,7 @@ export function Modal({ project }: Props) {
 
               <p className={styles.modal_description}>{project?.description}</p>
               <div className={styles.modal_stack}>
-                <p className={styles.modal_stack_title}>Technos utilisées:</p>
+                <p className={styles.modal_stack_title}>Technology used:</p>
                 <ul className={styles.tags}>
                   {project?.stacks.map((stack, index) => {
                     return <li key={index + 1}>{stack}</li>
@@ -72,6 +72,19 @@ export function Modal({ project }: Props) {
                     className={styles.modal_url_link}
                   >
                     {project?.gitlab_url}
+                  </a>
+                </div>
+              )}
+              {project?.github_url && (
+                <div className={styles.modal_url}>
+                  <p className={styles.modal_url_title}>Github URL:</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href={project?.github_url}
+                    className={styles.modal_url_link}
+                  >
+                    {project?.github_url}
                   </a>
                 </div>
               )}

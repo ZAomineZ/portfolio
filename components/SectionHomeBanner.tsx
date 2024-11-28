@@ -10,12 +10,12 @@ export function SectionHomeBanner() {
           <div className="row">
             <div className={`col-lg-7 ${styles.col}`}>
               <div className={styles.banner_content}>
-                <h3 className="text_uppercase">Bonjour</h3>
-                <h1 className="text_uppercase">Je suis Vincent Capek</h1>
-                <h5>Developpeur PHP Fullstack</h5>
+                <h3 className="text_uppercase">Hello</h3>
+                <h1 className="text_uppercase">I'm Vincent Capek</h1>
+                <h5>PHP Fullstack Developer</h5>
                 <div className="d_flex align_items_center">
                   <a href="#contact" className={stylesButton.primary_button}>
-                    <span>Contactez-moi</span>
+                    <span>Contact me</span>
                   </a>
                 </div>
               </div>
