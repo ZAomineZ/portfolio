@@ -27,7 +27,7 @@ export function Footer() {
               </div>
               <div className={styles.footer_social}>
                 <a
-                  href="https://twitter.com/Capek50121370"
+                  href="https://x.com/DevBlams"
                   target="_blank"
                   rel="noreferrer"
                 >
